@@ -1,0 +1,23 @@
+html {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Open Sans",
+    "Segoe UI", "Helvetica Neue",
+    sans-serif;
+
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+body {
+  color: var(--primary);
+  background-color: var(--background-alt);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
