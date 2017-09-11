@@ -16,19 +16,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   </head>
 
-
-  <body>
-
-    <header class="site-header" role="banner">Header</header>
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    <footer class="site-footer">Footer</footer>
-
-  </body>
+  <body>{{ content }}</body>
 
 </html>

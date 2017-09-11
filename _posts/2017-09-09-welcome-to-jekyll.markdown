@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guideline
 title:  "Welcome to Jekyll!"
 date:   2017-09-09 02:52:10 +0900
 categories: jekyll update

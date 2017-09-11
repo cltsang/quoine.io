@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header class="root__header">
+  {% capture header_content %}
+    {% assign items = page.dir | slice: 1, page.dir.size | split: "/" %}
+    {% for item in items %}
+      <span class="breadcrumb__item">
+        {%- assign words = item | split: "-" -%}
+        {% capture title %}
+          {% for word in words %}{{ word | capitalize }} {% endfor %}
+        {% endcapture %}
+        {{- title | strip -}}
+      </span>
+    {% endfor %}
+  {% endcapture %}
+  {% include header.html %}
+</header>
+
+<main class="root__content">
+  <div class="content">
+    <article class="post">
+      <h1>{{ page.title }}</h1>
+      <article>{{ content }}</article>
+    </article>
+  </div>
+</main>
